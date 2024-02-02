@@ -8,11 +8,14 @@ export function Logo({ content }: LogoProps): JSX.Element {
   return (
     <LazyMotion features={domAnimation}>
       <m.div
-        className="w-full flex pt-[70px] md:pt-[90px] lg:pt[60px] "
+        className=" w-full h-fit flex "
         initial={{ y: 200 }}
-        animate={{ y: 0, transition: { stiffness: 200, damping: 30, mass: 1 } }}
+        animate={{
+          y: 0,
+          transition: { stiffness: 200, damping: 30, mass: 1 },
+        }}
       >
-        <p className="font-sans font-extrabold text-nowrap text-redContent uppercase leading-none text-8xl sm:text-9xl md:text-[12rem] lg:text-[16rem] ">
+        <p className="font-sans w-full text-center font-extrabold text-nowrap text-redContent uppercase leading-none text-8xl sm:text-8xl md:text-[12rem] lg:text-[16rem] xl:text-[20rem] 2xl:text-[24rem] ">
           {content}
         </p>
       </m.div>

@@ -1,19 +1,8 @@
-'use client';
-
-import dynamic from 'next/dynamic';
-
-const Hero = dynamic(() => import('../sections/Hero').then((m) => m.Hero));
-const About = dynamic(() => import('../sections/About').then((m) => m.About));
-const Services = dynamic(() =>
-  import('../sections/Services').then((m) => m.Services),
-);
-const Contact = dynamic(() =>
-  import('../sections/Contact').then((m) => m.Contact),
-);
+import { Hero } from '../sections/Hero';
 
 export default function Home() {
   return (
-    <main className="flex flex-col h-screen w-screen p-6 xl:p-11 relative">
+    <main className="flex flex-col h-screen w-screen p-6 lg:p-12">
       <Hero />
     </main>
   );

@@ -9,10 +9,13 @@ export function HeroContent({ content }: HeroContentProps): JSX.Element {
     <LazyMotion features={domAnimation}>
       <m.div
         initial={{ x: 200 }}
-        animate={{ x: 0, transition: { stiffness: 200, damping: 30, mass: 1 } }}
-        className="w-full h-60 flex items-center pt-5 text-wrap "
+        animate={{
+          x: 0,
+          transition: { stiffness: 200, damping: 30, mass: 1 },
+        }}
+        className="w-full lg:w-[23%] h-fit flex bg-transparent mt-20 "
       >
-        <p className="font-sans leading-none text-2xl text-wrap md:w-[80%] lg:w-[70%]">
+        <p className="w-full font-sans leading-none font-medium text-[1.75rem] text-wrap text-left ">
           {content}
         </p>
       </m.div>
