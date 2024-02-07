@@ -8,7 +8,7 @@ export const Services = () => {
   return (
     <section
       id="servicos"
-      className="flex flex-col bg-background z-50 relative rounded-t-3xl"
+      className="flex flex-col w-screen bg-background z-50 relative rounded-t-3xl"
     >
       <div className="sticky top-20 flex flex-row-reverse px-6">
         <BadgeContent content="serviços" />
