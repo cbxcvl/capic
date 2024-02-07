@@ -13,9 +13,9 @@ export function HeroContent({ content }: HeroContentProps): JSX.Element {
           x: 0,
           transition: { stiffness: 200, damping: 30, mass: 1 },
         }}
-        className="w-full lg:w-[23%] h-fit flex bg-transparent mt-20 "
+        className="w-full lg:w-[40%] h-fit flex bg-transparent mt-20 "
       >
-        <p className="w-full font-sans leading-none font-medium text-[1.75rem] text-wrap text-left ">
+        <p className="w-full font-sans leading-none font-semibold text-[1.75rem]  text-wrap text-left ">
           {content}
         </p>
       </m.div>
