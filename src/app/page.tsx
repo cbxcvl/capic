@@ -1,9 +1,13 @@
+import { About } from '../sections/About';
 import { Hero } from '../sections/Hero';
+import { Services } from '../sections/Services';
 
 export default function Home() {
   return (
-    <main className="flex flex-col h-screen w-screen p-6 lg:p-12">
+    <main className="flex flex-col">
       <Hero />
+      <About />
+      <Services />
     </main>
   );
 }
