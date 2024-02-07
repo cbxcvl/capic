@@ -16,6 +16,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
+      style={{ scrollBehavior: 'smooth' }}
       className={`${GeistSans.variable} ${GeistMono.variable}`}
     >
       <body>{children}</body>
