@@ -56,10 +56,7 @@ export function Hero() {
               <MenuLink content="serviços" anchor="servicos" />
               <MenuLink content="contato" anchor="contato" />
             </nav>
-            <HeroContent
-              content="Capi resolve desafios de visibilidade e vendas com projetos
-              personalizados, impulsionando seus resultados."
-            />
+            <HeroContent content="Potencializando marcas através da criatividade e tecnologia. Proporcionando resultados impactantes." />
           </div>
           <m.div
             className="mb-20 lg:mb-0"
