@@ -6,6 +6,7 @@ const config: Config = {
     extend: {
       colors: {
         redContent: '#FF0000',
+        background: '#F5F5DC',
       },
       fontFamily: {
         sans: ['var(--font-geist-sans)'],
