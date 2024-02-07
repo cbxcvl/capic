@@ -39,7 +39,10 @@ export function Hero() {
   };
 
   return (
-    <section id="" className="flex flex-col w-full h-full">
+    <section
+      id=""
+      className="flex flex-col w-screen h-screen p-6 lg:p-12 overflow-auto"
+    >
       <LazyMotion features={domAnimation}>
         <HomeButton content={'inicio'} />
         <m.div
@@ -47,8 +50,8 @@ export function Hero() {
           variants={parallaxVariants40}
           animate="animate"
         >
-          <div className="w-full h-full flex flex-col lg:w-[70%] lg:flex-row lg:items-center lg:justify-center lg:gap-60 lg:self-center">
-            <nav className="flex flex-col mt-36 lg:mt-24">
+          <div className="w-full h-full flex flex-col lg:w-[65%] lg:flex-row lg:items-center lg:self-center lg:justify-center">
+            <nav className="flex w-full flex-col mt-36 lg:mt-24">
               <MenuLink content="sobre" anchor="sobre" />
               <MenuLink content="serviços" anchor="servicos" />
               <MenuLink content="contato" anchor="contato" />
