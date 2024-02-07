@@ -8,7 +8,7 @@ export function Logo({ content }: LogoProps): JSX.Element {
   return (
     <LazyMotion features={domAnimation}>
       <m.div
-        className=" w-full h-fit flex "
+        className=" w-full flex bg-background overflow-hidden"
         initial={{ y: 200 }}
         animate={{
           y: 0,
