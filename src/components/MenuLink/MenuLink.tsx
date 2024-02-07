@@ -7,10 +7,18 @@ interface MenuLinkProps {
 }
 
 export function MenuLink({ content, anchor }: MenuLinkProps): JSX.Element {
+  function scrollToSection(anchor: string) {
+    const section = document.querySelector(anchor);
+    if (section) {
+      section.scrollIntoView({ behavior: 'auto', block: 'center' });
+    }
+  }
+
   return (
     <Link
       href={`#${anchor}`}
-      className="no-underline h-12 w-full flex lg:h-14 "
+      onClick={() => scrollToSection(anchor)}
+      className="no-underline h-12 w-full lg:w-[90%] flex lg:h-[4rem] "
     >
       <LazyMotion features={domAnimation}>
         <m.div
@@ -19,7 +27,7 @@ export function MenuLink({ content, anchor }: MenuLinkProps): JSX.Element {
             x: 0,
             transition: { stiffness: 200, damping: 30, mass: 1 },
           }}
-          className=" flex h-full justify-center items-center bg-transparent "
+          className=" flex h-full w-full justify-center items-center bg-transparent md:w-[60%]"
           whileHover={{
             backgroundColor: 'red',
             scale: 1.0,
@@ -32,16 +40,16 @@ export function MenuLink({ content, anchor }: MenuLinkProps): JSX.Element {
           }}
         >
           <m.p
-            className=" w-80 lg:w-96 flex h-full rounded-none text-center items-center font-sans font-light uppercase text-5xl lg:text-6xl text-black"
+            className=" w-full flex h-full text-center items-center font-normal font-sans uppercase text-5xl lg:text-6xl xl:text-7xl text-black"
             whileHover={{
               scale: 1.3,
               color: `rgb(var(--background-end-rgb))`,
-              x: 50,
+              x: 70,
             }}
             whileTap={{
               scale: 1.3,
               color: `rgb(var(--background-end-rgb))`,
-              x: 50,
+              x: 70,
             }}
           >
             {content}
