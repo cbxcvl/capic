@@ -41,12 +41,12 @@ export function Hero() {
   return (
     <section
       id=""
-      className="flex flex-col w-screen h-screen p-6 lg:p-12 overflow-auto"
+      className="flex flex-col w-screen h-screen p-6 lg:p-12 overflow-hidden"
     >
       <LazyMotion features={domAnimation}>
         <HomeButton content={'inicio'} />
         <m.div
-          className="flex w-full h-full flex-col justify-between"
+          className="flex w-full h-full flex-col justify-between "
           variants={parallaxVariants40}
           animate="animate"
         >
@@ -59,7 +59,7 @@ export function Hero() {
             <HeroContent content="Potencializando marcas através da criatividade e tecnologia. Proporcionando resultados impactantes." />
           </div>
           <m.div
-            className="mb-20 lg:mb-0"
+            className="pb-20 lg:pb-0"
             variants={parallaxVariants60}
             animate="animate"
           >
