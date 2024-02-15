@@ -1,10 +1,31 @@
 'use client';
-
+import { useEffect } from 'react';
+import { useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer'; // Importa o hook useInView
 import { LazyMotion, domAnimation, m } from 'framer-motion';
-
 import { BadgeContent } from '../components/BadgeContent/BadgeContent';
+import { SectionContent } from '../components/SectionContent/SectionContent';
+import { Square } from '@/components/Square/Square';
 
 export const About = () => {
+  const controls1 = useAnimation();
+  const controls2 = useAnimation();
+
+  const { ref: ref1, inView: inView1 } = useInView({ threshold: 0.5 });
+  const { ref: ref2, inView: inView2 } = useInView({ threshold: 0.5 });
+
+  useEffect(() => {
+    controls1.start(
+      inView1 ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 },
+    );
+  }, [controls1, inView1]);
+
+  useEffect(() => {
+    controls2.start(
+      inView2 ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 },
+    );
+  }, [controls2, inView2]);
+
   return (
     <section
       id="sobre"
@@ -14,11 +35,34 @@ export const About = () => {
         <BadgeContent content="sobre" />
       </div>
       <LazyMotion features={domAnimation}>
-        <div className="w-screen h-screen p-6 lg:p-12">
-          <m.p className="text-black w-full ">Sobre 1</m.p>
+        <div ref={ref1} className="w-screen h-screen p-6 lg:p-12 flex">
+          <m.div
+            animate={controls1}
+            initial={{ opacity: 0.3 * 1.618, scale: 0.9 }}
+            transition={{ duration: 0.3 * 1.618 }}
+            className="w-full h-full"
+          >
+            <div className="flex justify-end mr-12">
+              <Square />
+            </div>
+            <SectionContent
+              content="Somos dedicados a revolucionar experiências online, elevando o padrão do desenvolvimento web e priorizando a satisfação do cliente. Com expertise em web design, desenvolvimento, UI/UX e design de produto, nossa distinção vai além do técnico, destacando-se pela transformação da visão digital em realidade.
+"
+            />
+          </m.div>
         </div>
-        <div className="w-screen h-screen p-6 lg:p-12">
-          <m.p className="text-black w-full ">Sobre 2</m.p>
+        <div ref={ref2} className="w-screen h-screen p-6 lg:p-12 flex">
+          <m.div
+            animate={controls2}
+            initial={{ opacity: 0.3, scale: 0.9 }}
+            transition={{ duration: 0.3 }}
+            className="w-full flex-row-reverse h-full"
+          >
+            <div className="flex justify-start ml-12">
+              <Square />
+            </div>
+            <SectionContent content="Cada projeto é uma oportunidade única para superar expectativas, criando soluções digitais inovadoras e impactantes, desde elegantes sites até interfaces, sempre com o foco centrado no usuário." />
+          </m.div>
         </div>
       </LazyMotion>
     </section>
