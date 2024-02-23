@@ -13,10 +13,14 @@ export const Contact = () => {
       <LazyMotion features={domAnimation}>
         <div className="w-full absolute overflow-hidden h-[70vh] pt-6 pl-6 lg:p-12 flex bg-black rounded-t-3xl flex-col justify-around">
           <div>
-            <ContactBadgeContent content={'contato'} />
+            <ContactBadgeContent content={'(contato)'} />
           </div>
           <div className="w-full">
-            <Link className="no-underline" href={'mailto:capic@proton.me'}>
+            <Link
+              className="no-underline"
+              href={'mailto:capic@proton.me'}
+              target="_blank"
+            >
               <ContactLink content={'capic@proton.me'} />
             </Link>
             <Link
@@ -27,7 +31,22 @@ export const Contact = () => {
               <ContactLink content={'+55 42 988 536 279'} />
             </Link>
           </div>
-          <div className="w-full h-[5%]">
+          <div className="w-full h-[5%] ">
+            <Link
+              className="no-underline flex w-fit h-fit"
+              href={'https://www.google.com/'}
+              target="_blank"
+            >
+              <ContactBadgeContent content="instagram" />
+            </Link>
+            <Link
+              className="no-underline flex w-fit h-fit"
+              href={'https://www.google.com/'}
+              target="_blank"
+            >
+              <ContactBadgeContent content="linkedin" />
+            </Link>
+
             <Copyright />
           </div>
           <div className="flex-col">
