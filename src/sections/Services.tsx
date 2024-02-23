@@ -16,30 +16,30 @@ export const Services = () => {
 
   useEffect(() => {
     controls1.start(
-      inView1 ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 },
+      inView1 ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.5 },
     );
   }, [controls1, inView1]);
 
   useEffect(() => {
     controls2.start(
-      inView2 ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 },
+      inView2 ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.5 },
     );
   }, [controls2, inView2]);
 
   return (
     <section
       id="servicos"
-      className="flex flex-col w-screen bg-background z-50 relative rounded-t-3xl"
+      className="flex flex-col bg-background z-50 relative"
     >
-      <div className="sticky top-20 flex flex-row-reverse px-6">
+      <div className=" sticky top-20 flex flex-row-reverse pr-12">
         <BadgeContent content="serviços" />
       </div>
       <LazyMotion features={domAnimation}>
-        <div ref={ref1} className="w-screen h-screen p-6 lg:p-12 flex">
+        <div ref={ref1} className="w-full h-screen p-6 lg:p-12 flex">
           <m.div
             animate={controls1}
             initial={{ opacity: 0.3 * 1.618, scale: 0.9 }}
-            transition={{ duration: 0.3 * 1.618 }}
+            transition={{ duration: 0.1 * 1.618 }}
             className="w-full h-full"
           >
             <div className="flex justify-start ml-12">
@@ -48,11 +48,11 @@ export const Services = () => {
             <SectionContent content="É a representação digital da credibilidade de uma empresa. Fornecendo de maneira concisa história, missão, visão, produtos e serviços, ele se torna central para clientes e parceiros em busca de informações confiáveis. A importância desse espaço virtual? É a solidez que assegura confiança e profissionalismo online" />
           </m.div>
         </div>
-        <div ref={ref2} className="w-screen h-screen p-6 lg:p-12 flex">
+        <div ref={ref2} className="w-full h-screen p-6 lg:p-12 flex">
           <m.div
             animate={controls2}
             initial={{ opacity: 0.3, scale: 0.9 }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.1 * 1.618 }}
             className="w-full flex-row-reverse h-full"
           >
             <div className="flex justify-end mr-12">
