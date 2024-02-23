@@ -5,6 +5,7 @@ import { Logo } from '../components/Logo/Logo';
 import { LazyMotion, domAnimation } from 'framer-motion';
 import { ContactBadgeContent } from '@/components/ContactBadgeContent/ContactBadgeContent';
 import { Copyright } from '@/components/Copyright/Copyright';
+import Link from 'next/link';
 
 export const Contact = () => {
   return (
@@ -15,8 +16,16 @@ export const Contact = () => {
             <ContactBadgeContent content={'contato'} />
           </div>
           <div className="w-full">
-            <ContactLink content={'capic@proton.me'} />
-            <ContactLink content={'+55 42 988 536 279'} />
+            <Link className="no-underline" href={'mailto:capic@proton.me'}>
+              <ContactLink content={'capic@proton.me'} />
+            </Link>
+            <Link
+              className="no-underline"
+              href={'https://wa.me/5542988536279'}
+              target="_blank"
+            >
+              <ContactLink content={'+55 42 988 536 279'} />
+            </Link>
           </div>
           <div className="w-full h-[5%]">
             <Copyright />
