@@ -1,4 +1,5 @@
 'use client';
+
 import { useEffect } from 'react';
 import { useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer'; // Importa o hook useInView
@@ -27,36 +28,36 @@ export const About = () => {
   }, [controls2, inView2]);
 
   return (
-    <section
-      id="sobre"
-      className="flex flex-col bg-background z-50 relative rounded-t-3xl"
-    >
-      <div className="sticky top-20 flex flex-row px-6">
-        <BadgeContent content="sobre" />
-      </div>
+    <section id="sobre" className="flex flex-col z-50 relative">
       <LazyMotion features={domAnimation}>
-        <div ref={ref1} className="w-screen h-screen p-6 lg:p-12 flex">
+        <div className="sticky top-20 flex flex-row lg:pl-12">
+          <BadgeContent content="sobre" />
+        </div>
+        <div
+          ref={ref1}
+          className="h-screen lg:w-[70%] pl-6 pt-6 lg:pl-12 lg:pt-12 flex lg:self-center "
+        >
           <m.div
             animate={controls1}
             initial={{ opacity: 0.3 * 1.618, scale: 0.9 }}
-            transition={{ duration: 0.3 * 1.618 }}
-            className="w-full h-full"
+            transition={{ duration: 0.1 * 1.618 }}
+            className="flex flex-col "
           >
-            <div className="flex justify-end mr-12">
+            <div className="flex justify-end pr-12 md:pr-24 z-50">
               <Square />
             </div>
-            <SectionContent
-              content="Somos dedicados a revolucionar experiências online, elevando o padrão do desenvolvimento web e priorizando a satisfação do cliente. Com expertise em web design, desenvolvimento, UI/UX e design de produto, nossa distinção vai além do técnico, destacando-se pela transformação da visão digital em realidade.
-"
-            />
+            <SectionContent content="Somos dedicados a revolucionar experiências online, elevando o padrão do desenvolvimento web e priorizando a satisfação do cliente. Com expertise em web design, desenvolvimento, UI/UX e design de produto, nossa distinção vai além do técnico, destacando-se pela transformação da visão digital em realidade." />
           </m.div>
         </div>
-        <div ref={ref2} className="w-screen h-screen p-6 lg:p-12 flex">
+        <div
+          ref={ref2}
+          className="w-full h-screen pl-6 pt-6 lg:pl-12 lg:pt-12 flex"
+        >
           <m.div
             animate={controls2}
             initial={{ opacity: 0.3, scale: 0.9 }}
-            transition={{ duration: 0.3 }}
-            className="w-full flex-row-reverse h-full"
+            transition={{ duration: 0.1 * 1.618 }}
+            className=" flex-row-reverse"
           >
             <div className="flex justify-start ml-12">
               <Square />
