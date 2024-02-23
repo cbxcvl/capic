@@ -18,7 +18,7 @@ export function MenuLink({ content, anchor }: MenuLinkProps): JSX.Element {
     <Link
       href={`#${anchor}`}
       onClick={() => scrollToSection(anchor)}
-      className="no-underline h-12 w-full lg:w-[90%] flex lg:h-[4rem] "
+      className="no-underline h-12 w-full flex lg:h-[4rem] "
     >
       <LazyMotion features={domAnimation}>
         <m.div
@@ -27,7 +27,7 @@ export function MenuLink({ content, anchor }: MenuLinkProps): JSX.Element {
             x: 0,
             transition: { stiffness: 200, damping: 30, mass: 1 },
           }}
-          className=" flex h-full w-full justify-center items-center bg-transparent md:w-[60%]"
+          className=" flex h-full w-full justify-center items-center bg-transparent md:w-[60%] lg:w-[80%]"
           whileHover={{
             backgroundColor: 'red',
             scale: 1.0,
@@ -44,7 +44,7 @@ export function MenuLink({ content, anchor }: MenuLinkProps): JSX.Element {
             whileHover={{
               scale: 1.3,
               color: `rgb(var(--background-end-rgb))`,
-              x: 70,
+              x: 100,
             }}
             whileTap={{
               scale: 1.3,
