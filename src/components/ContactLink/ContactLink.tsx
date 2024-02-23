@@ -7,7 +7,7 @@ interface MenuLinkProps {
 
 export function ContactLink({ content }: MenuLinkProps): JSX.Element {
   return (
-    <a className="no-underline h-12 w-full lg:w-[90%] flex lg:h-[4rem]">
+    <div className="no-underline h-12 w-full lg:w-[90%] flex lg:h-[4rem]">
       <LazyMotion features={domAnimation}>
         <m.div
           initial={{ x: -200 }}
@@ -49,6 +49,6 @@ export function ContactLink({ content }: MenuLinkProps): JSX.Element {
           </m.p>
         </m.div>
       </LazyMotion>
-    </a>
+    </div>
   );
 }
