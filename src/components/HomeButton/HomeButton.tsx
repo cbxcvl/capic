@@ -7,7 +7,7 @@ interface HomeButtonProps {
 
 export function HomeButton({ content }: HomeButtonProps): JSX.Element {
   return (
-    <div className=" flex fixed items-center justify-start lg:justify-center lg:ml-40  z-[999]">
+    <div className=" flex fixed items-center justify-start lg:justify-center lg:ml-40  z-[999] ">
       <LazyMotion features={domAnimation}>
         <m.div className="size-24 lg:size-28 items-center justify-start flex">
           <Link href={'#'} className="no-underline">
@@ -19,7 +19,7 @@ export function HomeButton({ content }: HomeButtonProps): JSX.Element {
               }}
               whileHover={{ scale: 1.3, x: 20 }}
               whileTap={{ scale: 1.3, x: 20 }}
-              className="font-sans font-semibold text-base uppercase text-black"
+              className="font-sans font-semibold text-lg lg:text-2xl uppercase text-black "
             >
               {content}
             </m.p>
