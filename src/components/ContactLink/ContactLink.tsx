@@ -37,7 +37,7 @@ export function ContactLink({ content }: MenuLinkProps): JSX.Element {
             whileHover={{
               scale: 1.3,
               color: `black`,
-              x: 70,
+              x: 90,
             }}
             whileTap={{
               scale: 1.3,
