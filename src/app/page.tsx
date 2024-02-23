@@ -1,3 +1,4 @@
+import { Contact } from '../sections/Contact';
 import { About } from '../sections/About';
 import { Hero } from '../sections/Hero';
 import { Services } from '../sections/Services';
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
+      <Contact />
     </main>
   );
 }
