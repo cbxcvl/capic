@@ -31,7 +31,7 @@ export const About = () => {
     <section id="sobre" className="flex flex-col z-50 relative">
       <LazyMotion features={domAnimation}>
         <div className="sticky top-20 flex flex-row lg:pl-12">
-          <BadgeContent content="sobre" />
+          <BadgeContent content="(sobre)" />
         </div>
         <div
           ref={ref1}
