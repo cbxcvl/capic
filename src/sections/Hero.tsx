@@ -39,27 +39,26 @@ export function Hero() {
   };
 
   return (
-    <section
-      id=""
-      className="flex flex-col w-screen h-screen p-6 lg:p-12 overflow-hidden"
-    >
+    <section id="" className=" flex flex-col overflow-hidden">
       <LazyMotion features={domAnimation}>
-        <HomeButton content={'inicio'} />
+        <div className="pl-6 pt-6 lg:pl-12 lg:pt-12">
+          <HomeButton content={'inicio'} />
+        </div>
         <m.div
-          className="flex w-full h-full flex-col justify-between "
+          className="flex w-full h-screen pl-6 pt-6 lg:pl-12 lg:pt-12 flex-col justify-between"
           variants={parallaxVariants40}
           animate="animate"
         >
-          <div className="w-full h-full flex flex-col lg:w-[65%] lg:flex-row lg:items-center lg:self-center lg:justify-center">
-            <nav className="flex w-full flex-col mt-36 lg:mt-24">
+          <div className="w-full h-full flex flex-col lg:w-[65%] lg:flex-row lg:items-center lg:self-center lg:justify-center lg:gap-2">
+            <nav className=" w-full flex flex-col mt-36 lg:mt-24">
               <MenuLink content="sobre" anchor="sobre" />
               <MenuLink content="serviços" anchor="servicos" />
               <MenuLink content="contato" anchor="contato" />
             </nav>
-            <HeroContent content="Potencializando marcas através da criatividade e tecnologia. Proporcionando resultados impactantes." />
+            <HeroContent content="Potencializando marcas através da criatividade, comunicação e tecnologia." />
           </div>
           <m.div
-            className="pb-20 lg:pb-0"
+            className="pb-24 lg:pb-0"
             variants={parallaxVariants60}
             animate="animate"
           >
