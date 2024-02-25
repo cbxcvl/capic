@@ -12,6 +12,7 @@
     "format": "prettier --write \"src/**/*.{ts,tsx}\""
   },
   "dependencies": {
+    "@vercel/analytics": "^1.2.2",
     "framer-motion": "^10.18.0",
     "geist": "^1.2.1",
     "next": "14.0.4",
