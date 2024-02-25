@@ -3,9 +3,21 @@ import { useEffect } from 'react';
 import { useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { LazyMotion, domAnimation, m } from 'framer-motion';
-import { BadgeContent } from '../components/BadgeContent/BadgeContent';
-import { SectionContent } from '../components/SectionContent/SectionContent';
-import { Square } from '@/components/Square/Square';
+import dynamic from 'next/dynamic';
+
+const BadgeContent = dynamic(() =>
+  import('../components/BadgeContent/BadgeContent').then((m) => m.BadgeContent),
+);
+
+const SectionContent = dynamic(() =>
+  import('../components/SectionContent/SectionContent').then(
+    (m) => m.SectionContent,
+  ),
+);
+
+const Square = dynamic(() =>
+  import('../components/Square/Square').then((m) => m.Square),
+);
 
 export const Services = () => {
   const controls1 = useAnimation();
