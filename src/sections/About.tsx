@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 import { useAnimation } from 'framer-motion';
-import { useInView } from 'react-intersection-observer'; // Importa o hook useInView
+import { useInView } from 'react-intersection-observer';
 import { LazyMotion, domAnimation, m } from 'framer-motion';
 import { BadgeContent } from '../components/BadgeContent/BadgeContent';
 import { SectionContent } from '../components/SectionContent/SectionContent';
