@@ -21,11 +21,7 @@ export default function RootLayout({
       style={{ scrollBehavior: 'smooth' }}
       className={`${GeistSans.variable} ${GeistMono.variable}`}
     >
-      <body>
-        {children}
-        <Analytics />
-        <SpeedInsights />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
