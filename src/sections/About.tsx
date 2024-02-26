@@ -32,12 +32,12 @@ export const About = () => {
   return (
     <section id="sobre" className="flex flex-col z-50 relative">
       <LazyMotion features={domAnimation}>
-        <div className="sticky top-20 flex flex-row lg:pl-12">
+        <div className="sticky top-20 lg:top-36 flex flex-row lg:pl-40">
           <BadgeContent content="(sobre)" />
         </div>
         <div
           ref={ref1}
-          className="h-screen lg:w-[70%] pl-6 pt-6 lg:pl-12 lg:pt-12 flex lg:self-center "
+          className="w-full lg:w-[70%] h-screen pl-6 pt-6 lg:pt-12 flex lg:pl-0 lg:self-center "
         >
           <m.div
             animate={controls1}
@@ -53,7 +53,7 @@ export const About = () => {
         </div>
         <div
           ref={ref2}
-          className="w-full h-screen pl-6 pt-6 lg:pl-12 lg:pt-12 flex"
+          className="w-full lg:w-[70%] h-screen pl-6 pt-6 lg:pt-12 flex lg:pl-0 lg:self-center "
         >
           <m.div
             animate={controls2}
@@ -61,7 +61,7 @@ export const About = () => {
             transition={{ duration: 0.1 * 1.618 }}
             className=" flex-row-reverse"
           >
-            <div className="flex justify-start ml-12">
+            <div className="flex justify-start pl-6 md:pl-12 z-50">
               <Square />
             </div>
             <SectionContent content="Cada projeto é uma oportunidade única para superar expectativas, criando soluções digitais inovadoras e impactantes, desde elegantes sites até interfaces, sempre com o foco centrado no usuário." />
