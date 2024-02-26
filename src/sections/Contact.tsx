@@ -3,23 +3,10 @@
 import { LazyMotion, domAnimation } from 'framer-motion';
 import dynamic from 'next/dynamic';
 
-const ContactLink = dynamic(() =>
-  import('../components/ContactLink/ContactLink').then((m) => m.ContactLink),
-);
-
-const Logo = dynamic(() =>
-  import('../components/Logo/Logo').then((m) => m.Logo),
-);
-
-const ContactBadgeContent = dynamic(() =>
-  import('../components/ContactBadgeContent/ContactBadgeContent').then(
-    (m) => m.ContactBadgeContent,
-  ),
-);
-
-const Copyright = dynamic(() =>
-  import('../components/Copyright/Copyright').then((m) => m.Copyright),
-);
+import { ContactLink } from '../components/ContactLink/ContactLink';
+import { Logo } from '../components/Logo/Logo';
+import { ContactBadgeContent } from '../components/ContactBadgeContent/ContactBadgeContent';
+import { Copyright } from '../components/Copyright/Copyright';
 import Link from 'next/link';
 
 export const Contact = () => {
