@@ -4,18 +4,10 @@ import dynamic from 'next/dynamic';
 import { LazyMotion, domAnimation, m } from 'framer-motion';
 import { useEffect, useState } from 'react';
 
-const HomeButton = dynamic(() =>
-  import('../components/HomeButton/HomeButton').then((m) => m.HomeButton),
-);
-const MenuLink = dynamic(() =>
-  import('../components/MenuLink/MenuLink').then((m) => m.MenuLink),
-);
-const HeroContent = dynamic(() =>
-  import('../components/HeroContent/HeroContent').then((m) => m.HeroContent),
-);
-const Logo = dynamic(() =>
-  import('../components/Logo/Logo').then((m) => m.Logo),
-);
+import { HomeButton } from '../components/HomeButton/HomeButton';
+import { MenuLink } from '../components/MenuLink/MenuLink';
+import { HeroContent } from '../components/HeroContent/HeroContent';
+import { Logo } from '../components/Logo/Logo';
 
 export function Hero() {
   const [scrollY, setScrollY] = useState(0);
