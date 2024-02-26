@@ -46,20 +46,13 @@ export const Contact = () => {
               <ContactLink content={'+55 42 988 536 279'} />
             </Link>
           </div>
-          <div className="w-full h-[5%] ">
+          <div className="w-full h-[5%] flex flex-row items-center justify-between">
             <Link
               className="no-underline flex w-fit h-fit"
               href={'https://www.google.com/'}
               target="_blank"
             >
               <ContactBadgeContent content="instagram" />
-            </Link>
-            <Link
-              className="no-underline flex w-fit h-fit"
-              href={'https://www.google.com/'}
-              target="_blank"
-            >
-              <ContactBadgeContent content="linkedin" />
             </Link>
             <Copyright />
           </div>
