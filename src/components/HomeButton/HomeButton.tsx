@@ -7,7 +7,7 @@ interface HomeButtonProps {
 
 export function HomeButton({ content }: HomeButtonProps): JSX.Element {
   return (
-    <div className=" flex fixed items-center justify-start lg:justify-center lg:ml-40  z-[999] ">
+    <div className=" flex fixed items-center justify-start lg:justify-center lg:pl-40  z-[999] ">
       <LazyMotion features={domAnimation}>
         <m.div className="size-24 lg:size-28 items-center justify-start flex">
           <Link href={'#'} className="no-underline">
