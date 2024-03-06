@@ -4,8 +4,6 @@ import { useEffect } from 'react';
 import { useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { LazyMotion, domAnimation, m } from 'framer-motion';
-import dynamic from 'next/dynamic';
-
 import { BadgeContent } from '../components/BadgeContent/BadgeContent';
 import { SectionContent } from '../components/SectionContent/SectionContent';
 import { Square } from '../components/Square/Square';
