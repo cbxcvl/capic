@@ -46,7 +46,7 @@ export const About = () => {
             <div className="flex justify-end pr-12 md:pr-24 z-50">
               <Square />
             </div>
-            <SectionContent content="Somos dedicados a revolucionar experiências online, elevando o padrão do desenvolvimento web e priorizando a satisfação do cliente. Com expertise em web design, desenvolvimento, UI/UX e design de produto, nossa distinção vai além do técnico, destacando-se pela transformação da visão digital em realidade." />
+            <SectionContent content="Somos dedicados a revolucionar experiências online, elevando o padrão do desenvolvimento web e priorizando a satisfação do cliente. Com expertise em web design, UI/UX, desenvolvimento e design de produto, nossa distinção vai além do técnico, destacando-se pela transformação da visão digital em realidade." />
           </m.div>
         </div>
         <div
