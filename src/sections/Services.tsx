@@ -119,7 +119,7 @@ export const Services = () => {
             <div className="flex justify-end mr-12">
               <Square />
             </div>
-            <SectionContent content="Simplificando para Fortalecer Seu Foco Principal. Deixe a tecnologia trabalhar a seu favor. Com automações, simplificamos processos, tornando o atendimento mais eficiente e libertando seu tempo para o que realmente importa - o core do seu negócio." />
+            <SectionContent content="Simplificando para Fortalecer Seu Foco Principal. Deixe a tecnologia trabalhar a seu favor. Com automações, simplificamos processos, tornando o atendimento mais eficiente e libertando seu tempo para o que realmente importa - o coração do seu negócio." />
           </m.div>
         </div>
       </LazyMotion>
