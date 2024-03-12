@@ -46,7 +46,7 @@ export const About = () => {
             <div className="flex justify-end pr-12 md:pr-24 z-50">
               <Square />
             </div>
-            <SectionContent content="Somos dedicados a revolucionar experiências online, elevando o padrão do desenvolvimento web e priorizando a satisfação do cliente. Com expertise em web design, UI/UX, desenvolvimento e design de produto, nossa distinção vai além do técnico, destacando-se pela transformação da visão digital em realidade." />
+            <SectionContent content="Sob os valores fundamentais de Inovação e Desenvolvimento, buscamos não apenas criar presenças online, mas redefinir a maneira como a tecnologia impacta positivamente a vida de todos." />
           </m.div>
         </div>
         <div
@@ -62,7 +62,7 @@ export const About = () => {
             <div className="flex justify-start pl-6 md:pl-12 z-50">
               <Square />
             </div>
-            <SectionContent content="Cada projeto é uma oportunidade única para superar expectativas, criando soluções digitais inovadoras e impactantes, desde elegantes sites até interfaces, sempre com o foco centrado no usuário." />
+            <SectionContent content="Aperfeiçoando estratégias online, otimizando sites em plataformas de busca, desenvolvendo soluções de alto desempenho e simplificando processos, construímos um futuro digital confiável, acessível e valioso para todos." />
           </m.div>
         </div>
       </LazyMotion>
